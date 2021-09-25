@@ -9,7 +9,8 @@
  * || || ||
  * \/ \/ \/
  */
-#include "../usermods/TT_Score_Screen/tt_score_screen.h"
+//#include "../usermods/TT_Score_Screen/tt_score_screen.h"
+#include "../usermods/TT_Timeout/tt_timeout.h"
 #ifdef USERMOD_DALLASTEMPERATURE
 #include "../usermods/Temperature/usermod_temperature.h"
 #endif
@@ -28,7 +29,7 @@ void registerUsermods()
    * || || ||
    * \/ \/ \/
    */
-usermods.add(new UsermodTTScoreScreen());
+usermods.add(new UsermodTTTimeout());
 #ifdef USERMOD_DALLASTEMPERATURE
   usermods.add(new UsermodTemperature());
 #endif
